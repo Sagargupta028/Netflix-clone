@@ -1,0 +1,293 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+/* --------------------------FIRST HEADER------------------------- */
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 5px 4%;
+}
+
+.help-center {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.logo {
+  padding: 0px 10px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.help-center p {
+  font-size: 20px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.subscribe {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px 10px;
+}
+
+/* ---------------------------SECOND HEADER----------------------------------------- */
+
+.header-two {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 15px 4%;
+}
+
+p {
+  color: #e50914;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.5s;
+}
+
+em:hover {
+  text-decoration: none;
+}
+
+a p:hover {
+  text-decoration: underline;
+  transform: translateX(-10px);
+}
+
+em {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background: #e50914;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 7px 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.print {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 7px 10px 7px 3px;
+}
+
+.print img {
+  width: 30px;
+}
+
+/* -----------------------BODY TEXT------------------------- */
+.text {
+  padding: 5px 4%;
+  text-align: justify;
+  font-size: 13px;
+}
+
+.text>h1 {
+  font-size: 40px;
+  font-weight: 750;
+  max-width: 800px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-right: -200px;
+}
+
+.text>p {
+  font-size: 17px;
+  font-weight: 350;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 17px;
+  font-weight: 350;
+  color: black;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.info pre {
+  font-size: 17px;
+  font-weight: 350;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.text a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------FOOTER------------------------- */
+.footer {
+  padding: 50px 6% 80px;
+  background-color: black;
+  color: #777;
+}
+
+.footer .language {
+  display: inline-flex;
+  align-items: center;
+  color: #777;
+  font-size: 20px;
+  background-color: black;
+  padding: 10px 20px;
+  border: solid 1px #777;
+  border-radius: 3px;
+}
+
+.language img {
+  width: 10px;
+  margin-left: 80px;
+  opacity: 0.5;
+}
+
+.footer .row a {
+  display: inline;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+  flex-basis: 40%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding-left: 23px;
+}
+
+.row a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------CSS ADJUSTMENTS FOR SMALL SCREENS--------------------------------------------------------------- */
+/* For screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  /* -----------------------ADJUSTMENTS FOR HEADER 1--------------------------------------- */
+  .header {
+    width: 100%;
+    height: 9vh;
+  }
+
+  .logo {
+    width: 80px;
+    margin-left: 15px;
+  }
+
+  .help-center p {
+    margin-top: 0.1px;
+    font-size: 15px;
+  }
+
+  nav button {
+    visibility: hidden;
+    display: none;
+    font-size: 0;
+    padding: 0;
+  }
+  .subscribe {
+    display: none;
+  }
+  /* -----------------------ADJUSTMENTS FOR HEADER 2--------------------------------------- */
+  p {
+    font-size: 12px;
+    margin-top: -10px;
+    padding-left: 4px;
+  }
+  .print {
+    display: none;
+  }
+  /* -----------------------ADJUSTMENTS FOR BODY WITH INFO--------------------------------------- */
+  .text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 650px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 4px;
+    margin-right: 0;
+  }
+
+  .text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .text pre {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    padding-left: 5px;
+    margin-right: 5px;
+    /* Allow pre tag to break lines if it doesn't fit in the design */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+
+  /* -----------------------ADJUSTMENTS FOR FOOTER--------------------------------------- */
+  .footer {
+    padding: 20px 2% 50px;
+  }
+
+  .footer .language {
+    display: none;
+  }
+
+  .row a {
+    display: flex;
+    text-align: center;
+    margin-left: 30px;
+  }
+}

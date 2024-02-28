@@ -1,0 +1,243 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/account/background.jpg);
+}
+
+/* --------------------------HEADER--------------------------------------------------------- */
+
+.content {
+    width: 100%;
+    height: 100vh;
+}
+
+nav .logo {
+    position: relative;
+    display: flex;
+    padding-top: 25px;
+    padding-left: 3%;
+    width: 210px;
+    cursor: pointer;
+    max-width: 500px;
+}
+
+/* ----------------------------FORM BOX------------------------------------------- */
+
+.box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 40%;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 3px;
+    align-self: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 2% 32% 70px 32%;
+}
+
+.box h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.box .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box .form input {
+    border: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 5px;
+}
+/* This is to make the color of the entered text in the form white */
+input, select, textarea {
+    color: white;
+}
+/* This is for the color of the text while typing to be white */
+textarea:focus, input:focus {
+    color: white;
+}
+
+.box button {
+    border: none;
+    padding: 15px 35%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box .checkbox {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 10px 0px;
+    margin-bottom: 50px;
+}
+
+.remember {
+    display: inline-flex;
+}
+
+.remember label {
+    margin-left: 3px;
+}
+
+#checkbox1 {
+    accent-color: #b3b3b3;
+}
+
+.box .checkbox div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.box .checkbox div p:hover {
+    text-decoration: underline;
+}
+
+.box .subscription p {
+    margin: 15px 0px 0 0px;
+    color: gray;
+}
+
+.box .subscription p span {
+    color: white;
+    font-weight: 600;
+}
+
+.box .subscription p + p {
+    font-size: 13px;
+}
+
+.box .subscription a {
+    color: #0071eb;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.box .subscription a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------FOOTER-------------------------------------------------------------- */
+
+footer {
+    padding: 50px 15% 10px;
+    color: #777;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 10%;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    max-width: 900px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    height: 10vh;
+    padding: 0px 15px;
+}
+
+footer ul li {
+    font-size: 14px;
+    width: 25%;
+    list-style: none;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------CSS ADJUSTMENTS FOR SMALL SCREENS--------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+
+    nav .logo {
+        padding-left: 3%;
+        padding-top: 3%;
+        width: 40%;
+    }
+
+    .box {
+        width: 105%;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        padding-right: 3%px;
+        margin: 2% 3% 2% 3%;
+    }
+
+    .box .form input {
+        padding: 15px;
+        margin-bottom: 3%;
+    }
+
+    .box button {
+        padding: 15px 37%;
+    }
+
+    .box .subscription {
+        margin-top: -20px;
+    }
+
+    .box .subscription p span {
+        font-weight: 300;
+    }
+
+    /* ---------------------------FOOTER ADJUSTMENTS------------------- */
+    footer {
+        padding: 5% 7% 3%;
+        border-top: 2px solid #333;
+    }
+
+    footer p {
+        font-size: 15px;
+        margin-bottom: 7%;
+    }
+
+    footer ul {
+        margin-bottom: 5%;
+        padding: 0px;
+        height: 15vh;
+    }
+
+    footer ul li {
+        font-size: 12px;
+        width: 50%;
+    }
+}

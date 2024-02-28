@@ -1,0 +1,350 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+/* --------------------------FIRST HEADER------------------------- */
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 5px 4%;
+}
+
+.help-center {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.logo {
+  padding: 0px 10px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.help-center p {
+  font-size: 20px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.subscription {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px 10px;
+}
+
+/* ---------------------------SECOND HEADER----------------------------------------- */
+
+.header-two {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 15px 4%;
+}
+
+p {
+  color: #e50914;
+  font-size: 15px;
+  font-weight: 500;
+  transition: transform 0.5s;
+}
+
+em:hover {
+  text-decoration: none;
+}
+
+a p:hover {
+  text-decoration: underline;
+  transform: translateX(-10px);
+}
+
+em {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background: #e50914;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 7px 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.print {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 7px 10px 7px 3px;
+}
+
+.print img {
+  width: 30px;
+}
+
+/* -----------------------BODY TEXT------------------------- */
+.text {
+  padding: 5px 4%;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.text h1 {
+  font-size: 40px;
+  font-weight: 750;
+  max-width: 650px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.text p {
+  font-size: 17px;
+  font-weight: 350;
+  color: #221f1f;
+  margin-bottom: 40px;
+}
+
+.text .set {
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: -2%;
+}
+
+a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 6%;
+  list-style-position: inside;
+}
+
+.list {
+  margin-top: -2%;
+  font-size: 17px;
+}
+
+.list h3 {
+  font-size: 17px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.list li {
+  margin-bottom: 3%;
+  margin-top: -1%;
+}
+
+.list-two {
+  margin-top: 2%;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
+  margin-bottom: 4%;
+}
+
+.text .three ul li {
+  margin-bottom: 2%;
+}
+
+.text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #221f1f;
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+/* -----------------------------------FOOTER------------------------- */
+.footer {
+  padding: 50px 6% 80px;
+  background-color: black;
+  color: #777;
+}
+
+.footer .language {
+  display: inline-flex;
+  align-items: center;
+  color: #777;
+  font-size: 20px;
+  background-color: black;
+  padding: 10px 20px;
+  border: solid 1px #777;
+  border-radius: 3px;
+}
+
+.language img {
+  width: 10px;
+  margin-left: 80px;
+  opacity: 0.5;
+}
+
+.footer .row a {
+  display: inline;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+  flex-basis: 40%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding-left: 23px;
+}
+
+.footer .row a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------CSS ADJUSTMENTS FOR SMALL SCREENS--------------------------------------------------------------- */
+/* Adjustments for screens less than 600px */
+@media only screen and (max-width: 600px) {
+  /* -----------------------HEADER 1 ADJUSTMENTS--------------------------------------- */
+  .header {
+    width: 100%;
+    height: 9vh;
+  }
+
+  .logo {
+    width: 80px;
+    margin-left: 15px;
+  }
+
+  .help-center p {
+    margin-top: 0.1px;
+    font-size: 15px;
+  }
+
+  nav button {
+    visibility: hidden;
+    display: none;
+    font-size: 0;
+    padding: 0;
+  }
+  .subscription {
+    display: none;
+  }
+  /* -----------------------HEADER 2 ADJUSTMENTS--------------------------------------- */
+  p {
+    font-size: 12px;
+    margin-top: -10px;
+    padding-left: 4px;
+  }
+  .print {
+    display: none;
+  }
+  /* -----------------------BODY TEXT ADJUSTMENTS--------------------------------------- */
+  .text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+
+  .text p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-bottom: -1%;
+  }
+
+  ul {
+    margin-bottom: 10%;
+    margin-top: -3%;
+  }
+  
+  .list {      
+    margin-top: 2%;
+  }
+  
+  .list li {
+    margin-top: 5%;
+  }
+
+  .list-two ul li:nth-child(1){
+    margin-top: 10%;
+  }
+  
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
+    margin-bottom: 10%;
+  }
+
+  .text h3 {
+    display: inline;
+  }
+
+  .seven .list h3 + p {
+    margin-top: 3%;
+  }
+
+  .text h4 {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  /* -----------------------FOOTER ADJUSTMENTS--------------------------------------- */
+  .footer {
+    padding: 20px 2% 50px;
+  }
+
+  .footer .language {
+    display: none;
+  }
+
+  .footer .row a {
+    display: flex;
+    text-align: center;
+    margin-left: 30px;
+  }
+}
